@@ -1,0 +1,21 @@
+dotnet build
+
+dotnet build ./Lib/Lib.csproj 
+
+dotnet test ./Test/test.csproj 
+
+dotnet run --project ./App/app.csproj
+
+rm -rf ./App/bin ./App/obj/ ./Lib/bin/ ./Lib/obj/ ./Test/bin/ ./Test/obj/ ./Test/TestResults/
+
+
+
+rm -rf ./App/bin ./App/obj/ ./Lib/bin/ ./Lib/obj/ ./Test/bin/ ./Test/obj/ ./Test/TestResults/
+dotnet build ./Lib/Lib.csproj 
+rm -rf ./App/bin ./App/obj/ ./Lib/bin/ ./Lib/obj/ ./Test/bin/ ./Test/obj/ ./Test/TestResults/
+dotnet test ./Test/test.csproj 
+rm -rf ./App/bin ./App/obj/ ./Lib/bin/ ./Lib/obj/ ./Test/bin/ ./Test/obj/ ./Test/TestResults/
+dotnet run --project ./App/app.csproj
+rm -rf ./App/bin ./App/obj/ ./Lib/bin/ ./Lib/obj/ ./Test/bin/ ./Test/obj/ ./Test/TestResults/
+dotnet build
+rm -rf ./App/bin ./App/obj/ ./Lib/bin/ ./Lib/obj/ ./Test/bin/ ./Test/obj/ ./Test/TestResults/
